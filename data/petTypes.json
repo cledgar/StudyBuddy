@@ -1,1 +1,4 @@
 
+[
+  { "id": "duck", "name": "Duck", "sprites": "assets/pets/duck.png" }
+]
