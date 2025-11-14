@@ -1,1 +1,1 @@
-stub file to create folders
+Delete these text files when you've got the images uploaded!
