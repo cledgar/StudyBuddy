@@ -10,9 +10,10 @@ we can discuss font in the group chat. try to make modules rounded and simple an
  */
 
 body {
-    background: #f5f5f5;
-    font-family: Arial, sans-serif;
+    background: #dfe8ef;
+    font-family: Verdana, sans-serif;
     text-align: center;
+    color: #8695c0;
 }
 .hidden {
     display: none;

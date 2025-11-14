@@ -1,11 +1,11 @@
 <!-- settings page -->
 
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <head>
     <meta charset="UTF-8" />
     <title>Settings</title>
-    <link rel="stylesheet" href="css/settings.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 <h1>Settings</h1>
@@ -17,26 +17,26 @@
 
 
     <h3>Add Flashcard</h3>
-    <input id="q-input" placeholder="Question" />
-    <input id="a-input" placeholder="Answer" />
+    <label for="q-input">Question</label>
+    <input id="q-input" placeholder="Type question here..." />
+    <label for="a-input">Answer</label>
+    <input id="a-input" placeholder="Type answer here..." />
     <button id="add-card">Add</button>
 </section>
 
 
 <section>
     <h2>Pet Type</h2>
-    <select id="pet-select"></select>
+    <label for="pet-select">Choose a Pet</label>
+    <select id="pet-select">
+        <option value = "chicken">Chicken</option>
+        <option value = "frog">Frog</option>
+        <option value = "cow">Cow</option>
+        <option value = "pig">Pig</option>
+    </select>
     <button id="save-pet">Save Pet</button>
 </section>
 
-
-<a href="index.html"><button>Back</button></a>
-
-
-<script src="js/storage.js"></script>
-<script src="js/settings.js"></script>
-</body>
-</html>
 
 <a href="index.html"><button>Back</button></a>
 
