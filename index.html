@@ -1,33 +1,50 @@
 <!-- pseudocode mockup for main  page :) -->
 
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8" />
+  <title>Study Pet Game</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
 <body>
   <header>
     <div id="coin-display">Coins: 0</div>
     <button id="open-shop">Shop</button>
     <button id="open-inventory">Inventory</button>
     <button id="open-flashcards">Flashcards</button>
+    <a href="settings.html"><button>Settings</button></a>
   </header>
 
   <main>
     <section id="pet-area">
       <!-- Pet art goes here -->
-      <img id="pet-sprite" src="assets/pets/default.png">
+      <!-- image here <img id="pet-sprite" src="assets/pets/default.png"> -->
       <div id="pet-name">Your Pet</div>
 
       <div id="pet-needs">
-        <div class="need" id="hunger">Hunger: 80%</div>
-        <div class="need" id="thirst">Thirst: 60%</div>
-        <div class="need" id="clean">Cleanliness: 40%</div>
+        <div class="need" id="hunger">Hunger: 100%</div>
+        <div class="need" id="thirst">Thirst: 100%</div>
+        <div class="need" id="clean">Cleanliness: 100%</div>
       </div>
     </section>
 
     <section id="flashcard-area" class="hidden">
       <div id="flashcard-question"></div>
-      <input id="flashcard-answer" type="text">
+      <label for="flashcard-answer"></label><input id="flashcard-answer" type="text">
       <button id="submit-answer">Submit</button>
     </section>
 
     <div id="modal-container" class="hidden"></div>
-  </main>
-</body>
 
+  </main>
+  <script src="js/storage.js"></script>
+  <script src="js/pet.js"></script>
+  <script src="js/inventory.js"></script>
+  <script src="js/flashcards.js"></script>
+  <script src="js/shop.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

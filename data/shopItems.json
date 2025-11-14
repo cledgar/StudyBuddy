@@ -1,3 +1,5 @@
 [
-  { "id": "food", "name": "Food", "price": 10 }
+  { "id": "food", "name": "Food", "price": 10 },
+  { "id": "water", "name": "Water", "price": 5},
+  { "id": "brush", "name": "Brush", "price": 15}
 ]
