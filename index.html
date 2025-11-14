@@ -1,1 +1,33 @@
+<!-- pseudocode mockup for main  page :) -->
+
+<body>
+  <header>
+    <div id="coin-display">Coins: 0</div>
+    <button id="open-shop">Shop</button>
+    <button id="open-inventory">Inventory</button>
+    <button id="open-flashcards">Flashcards</button>
+  </header>
+
+  <main>
+    <section id="pet-area">
+      <!-- Pet art goes here -->
+      <img id="pet-sprite" src="assets/pets/default.png">
+      <div id="pet-name">Your Pet</div>
+
+      <div id="pet-needs">
+        <div class="need" id="hunger">Hunger: 80%</div>
+        <div class="need" id="thirst">Thirst: 60%</div>
+        <div class="need" id="clean">Cleanliness: 40%</div>
+      </div>
+    </section>
+
+    <section id="flashcard-area" class="hidden">
+      <div id="flashcard-question"></div>
+      <input id="flashcard-answer" type="text">
+      <button id="submit-answer">Submit</button>
+    </section>
+
+    <div id="modal-container" class="hidden"></div>
+  </main>
+</body>
 
