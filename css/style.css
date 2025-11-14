@@ -1,1 +1,22 @@
+/* change whatever to make it cute! here's the color palette from our chosen color palette:
+baby pink: #f6d9de
+pink-purple: #c490be
+lavender: #897dab
+dark periwinkle blue: #8695c0
+pale sky blue: #b2c7df
+baby blue/close to white: #dfe8ef
 
+we can discuss font in the group chat. try to make modules rounded and simple and cute!
+ */
+
+body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+#pet-area img {
+    width: 200px;
+}
