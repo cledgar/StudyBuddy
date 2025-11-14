@@ -1,1 +1,3 @@
-
+[
+  { "id": "food", "name": "Food", "price": 10 }
+]
