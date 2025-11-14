@@ -21,3 +21,7 @@ body {
 #pet-area img {
     width: 200px;
 }
+#pet-name-display {
+    font-size: 2rem;
+    font-weight: bold;
+}
