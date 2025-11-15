@@ -11,10 +11,7 @@
 <body>
   <header>
     <!-- need to make these display actual game info and not the placeholders -->
-    <div id="pet-name-display">Buddy</div>
     <div id="coin-display">Coins: 0</div>
-    <button id="open-shop">Shop</button>
-    <button id="open-inventory">Inventory</button>
     <button id="open-flashcards">Flashcards</button>
     <a href="settings.html"><button>Settings</button></a>
   </header>
@@ -22,8 +19,8 @@
   <main>
     <section id="pet-area">
       <!-- Pet art goes here -->
-      <!-- image here <img id="pet-sprite" src="assets/pets/default.png"> -->
-      <div id="pet-name">Your Pet</div>
+      <img id="pet-sprite" src="assets/pets/chicken.png" alt="Chicken">
+      <div id="pet-name">Buddy</div>
 
       <div id="pet-needs">
         <div class="need" id="hunger">Hunger: 100%</div>
@@ -32,13 +29,28 @@
       </div>
     </section>
 
-    <section id="flashcard-area" class="hidden">
+    <section id="flashcard-area">
       <div id="flashcard-question"></div>
       <label for="flashcard-answer"></label><input id="flashcard-answer" type="text">
       <button id="submit-answer">Submit</button>
     </section>
 
     <div id="modal-container" class="hidden"></div>
+    <section id="ui-panels">
+      <section id="inventory-module" class="panel">
+        <h2>Inventory</h2>
+        <section id="inventory-inventory" class="sub-panel">
+          <div id="inventory-items"></div>
+        </section>
+      </section>
+
+      <section id="shop-module" class="panel">
+        <h2>Shop</h2>
+        <section id="shop-inventory" class="sub-panel">
+          <div id="shop-items"></div>
+        </section>
+      </section>
+    </section>
 
   </main>
   <script src="js/storage.js"></script>
