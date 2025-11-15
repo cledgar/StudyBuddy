@@ -30,8 +30,8 @@ Checklist:
       - ~~frog~~  
       - ~~pig~~  
       - ~~cow~~  
-      - ~~snake~~
-      - ~~whale~~
+      - ~~snake~~  
+      - ~~whale~~  
       - shop icons (food, water, brush, etc)  
       - coin icon  
       - utility icons (exit, settings, back)
