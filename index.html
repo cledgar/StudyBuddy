@@ -12,8 +12,7 @@
   <header>
     <!-- need to make these display actual game info and not the placeholders -->
     <div id="coin-display">Coins: 0</div>
-    <button id="open-flashcards">Flashcards</button>
-    <a href="settings.html"><button>Settings</button></a>
+    <a id="setting-button" href="settings.html"><img id="settings" src="assets/icons/settings.png" alt="Settings" height="30" width="30"></a>
   </header>
 
   <main>
@@ -30,9 +29,11 @@
     </section>
 
     <section id="flashcard-area">
-      <div id="flashcard-question"></div>
-      <label for="flashcard-answer"></label><input id="flashcard-answer" type="text">
-      <button id="submit-answer">Submit</button>
+      <div id="flashcard-card">
+        <div id="flashcard-question" class="side">Question</div>
+        <div id="flashcard-answer" class="side">Answer</div>
+      </div>
+      <div id="flashcard-counter">1 / 1</div>
     </section>
 
     <div id="modal-container" class="hidden"></div>
