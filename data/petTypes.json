@@ -1,7 +1,9 @@
 
 [
-  { "id": "duck", "name": "Duck", "sprites": "assets/pets/duck.png" },
+  { "id": "cow", "name": "Cow", "sprites": "assets/pets/cow.png" },
   { "id": "pig", "name": "Pig", "sprites":  "assets/pets/pig.png"},
   { "id": "frog", "name":  "Frog", "sprites": "assets/pets/frog.png"},
-  { "id": "chicken", "name": "Chicken", "sprites": "assets/pets/chicken.png"}
+  { "id": "chicken", "name": "Chicken", "sprites": "assets/pets/chicken.png"},
+  { "id": "snake", "name": "Snake", "sprites": "assets/pets/snake.png"},
+  { "id": "whale", "name": "Whale", "sprites": "assets/pets/whale.png"}
 ]
