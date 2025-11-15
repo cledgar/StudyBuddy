@@ -26,10 +26,12 @@ Checklist:
       - style.css  
 - Assets  
       - site icon  
-      - chicken  
-      - frog  
-      - pig  
-      - cow  
-      - snake (maybe)  
+      - ~~chicken~~  
+      - ~~frog~~  
+      - ~~pig~~  
+      - ~~cow~~  
+      - ~~snake~~
+      - ~~whale~~
       - shop icons (food, water, brush, etc)  
       - coin icon  
+      - utility icons (exit, settings, back)
