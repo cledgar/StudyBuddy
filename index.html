@@ -15,6 +15,8 @@
     <a id="setting-button" href="settings.html"><img id="settings" src="assets/icons/settings.png" alt="Settings" height="30" width="30"></a>
   </header>
 
+  <div id="modal-container" class="hidden"></div>
+
   <main>
     <div class="game-layout">
       <div class="left">
@@ -55,14 +57,14 @@
         <img id="pet-sprite" src="assets/pets/chicken.png" alt="Chicken">
         <div id="pet-name">Buddy</div>
 
-        <div id="pet-hunger" class="stat-bar">
-          <div class="stat-fill" id="hungerFill">Hunger</div>
+        <div class="stat-bar">
+          <div class="stat-fill" id="hunger-bar">Hunger</div>
         </div>
-        <div id="pet-thirst" class="stat-bar">
-          <div class="stat-fill" id="thirstFill">Thirst</div>
+        <div class="stat-bar">
+          <div class="stat-fill" id="thirst-bar">Thirst</div>
         </div>
-        <div id="pet-hygiene" class="stat-bar">
-          <div class="stat-fill" id="hygieneFill">Hygiene</div>
+        <div class="stat-bar">
+          <div class="stat-fill" id="hygiene-bar">Hygiene</div>
         </div>
       </div>
 
@@ -77,6 +79,8 @@
         </div>
 
     </div>
+
+
 
   </main>
   <script src="js/storage.js"></script>
