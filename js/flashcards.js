@@ -5,29 +5,48 @@
 
 class Flashcards {
   constructor() {
-    this.cards = [];  // { question: "...", answer: "..." }
+    this.cards = [];
     this.currentCard = null;
+    this.score = 0;
   }
 
-  loadCards(array) {
-    this.cards = array;
+  loadCards() {
+    this.cards = [
+      { q: "What's the tallest mountain in the world?", a: "Mount Everest" },
+      { q: "What's the largest country by land?", a: "Russia" },
+      { q: "What is the most spoken language in the world?", a: "English" },
+      { q: "Whats the root of 252?", a: "15.87" },
+      { q: "Who discovered the black hole?", a: "John Michell" },
+      { q: "What's the capital of Switzerland?", a: "Bern" },
+      { q: "Who said 'to be or not to be'?", a: "Shakespeare" },
+      { q: "What is the process of liquid turning into gas?", a: "Evaporation" },
+      { q: "Whats the lightest element?", a: "Hydrogen" },
+      { q: "What elements is salt made of?", a: "Sodium and Chlorine" },
+      { q: "How many letters in the English alphabet?", a: "26" },
+      { q: "What does 'function' mean in math?", a: "Mapping input to output" },
+      { q: "In triangle if one column is twice the second, what is the last?", a: "Cannot be determined" },
+      { q: "Who wrote Hamlet?", a: "Shakespeare" },
+      { q: "When did WW1 start?", a: "1914" },
+      { q: "Who made the largest empire ever?", a: "Genghis Khan" },
+      { q: "Where does sugar come from?", a: "Sugarcane" }
+    ];
   }
 
   randomCard() {
-    this.currentCard = chooseRandom(this.cards);
-    return this.currentCard.question;
+    const i = Math.floor(Math.random() * this.cards.length);
+    this.currentCard = this.cards[i];
+    return this.currentCard.q;
   }
 
-  checkAnswer(userAnswer) {
-    if (userAnswer.trim().toLowerCase() === 
-        this.currentCard.answer.toLowerCase()) {
-      // might wannt to remove this and/or add an option for users to simply check their 
-      // own answers in case they have a topic that's hard to type exact answers in for
+  revealAnswer() {
+    return this.currentCard.a;
+  }
 
-      player.coins += 5;   // reward
-      saveGameData();
-      return true;
-    }
-    return false;
+  markCorrect() {
+    this.score += 5;
   }
 }
+
+module.exports = Flashcards;
+
+
