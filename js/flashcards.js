@@ -42,8 +42,13 @@ class Flashcards {
     return this.currentCard.a;
   }
 
-  markCorrect() {
-    this.score += 5;
+ selfValidate(userSaysCorrect) {
+    if (userSaysCorrect) {
+      window.player.coins += 5;
+      saveGameData();
+      return true;
+    }
+    return false;
   }
 }
 
