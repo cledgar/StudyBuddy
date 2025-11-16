@@ -1,6 +1,9 @@
 // inventory logic
 
 //same as before, remove whatever you want! :)
+// rn there is inventory functionality in main.js bcuz i just wanted to see it work
+// but you can remove that and move all inventory logic here for organization purposes
+// just make sure it works first :)
 
 class Inventory {
   constructor() {
