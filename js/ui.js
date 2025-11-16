@@ -1,5 +1,8 @@
 // ui helper functions
 
+// this is mostly done tbh but add stuff as needed. this is just functionality like rendering and 
+// updating and stuff, so you very well may have to add to this
+
 function $(selector) {
   return document.querySelector(selector);
 }
