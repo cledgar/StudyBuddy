@@ -1,5 +1,7 @@
 // logic for the settings page
 
+// i want things here for utility, such as the functions i've listed. i would also like the ability to change the pet's name, which i forgot to add
+
 onSettingsLoad() {
   loadGameData();
   populateFlashcardEditor();
