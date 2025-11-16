@@ -9,47 +9,44 @@ things to do:
 
 <!DOCTYPE html>
 <html lang="eng">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Settings</title>
     <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-<h1>Settings</h1>
+  </head>
+  <body>
+    <h1>Settings</h1>
 
+    <section>
+      <h2>Flashcards</h2>
+      <div id="flashcard-list"></div>
 
-<section>
-    <h2>Flashcards</h2>
-    <div id="flashcard-list"></div>
+      <h3>Add Flashcard</h3>
+      <label for="q-input">Question</label>
+      <input id="q-input" placeholder="Type question here..." />
+      <label for="a-input">Answer</label>
+      <input id="a-input" placeholder="Type answer here..." />
+      <button id="add-card">Add</button>
+    </section>
 
-    <h3>Add Flashcard</h3>
-    <label for="q-input">Question</label>
-    <input id="q-input" placeholder="Type question here..." />
-    <label for="a-input">Answer</label>
-    <input id="a-input" placeholder="Type answer here..." />
-    <button id="add-card">Add</button>
-</section>
+    <section>
+      <h2>Pet Type</h2>
+      <label for="pet-select">Choose a Pet</label>
+      <select id="pet-select">
+        <option value="chicken">Chicken</option>
+        <option value="frog">Frog</option>
+        <option value="cow">Cow</option>
+        <option value="pig">Pig</option>
+        <option value="whale">Whale</option>
+        <option value="snake">Snake</option>
+      </select>
+      <button id="save-pet">Save Pet</button>
+    </section>
 
+    <a href="index.html"><button>Back</button></a>
 
-<section>
-    <h2>Pet Type</h2>
-    <label for="pet-select">Choose a Pet</label>
-    <select id="pet-select">
-        <option value = "chicken">Chicken</option>
-        <option value = "frog">Frog</option>
-        <option value = "cow">Cow</option>
-        <option value = "pig">Pig</option>
-        <option value = "whale">Whale</option>
-        <option value = "snake">Snake</option>
-    </select>
-    <button id="save-pet">Save Pet</button>
-</section>
-
-
-<a href="index.html"><button>Back</button></a>
-
-
-<script src="js/storage.js"></script>
-<script src="js/settings.js"></script>
-</body>
+    <script src="js/storage.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/settings.js"></script>
+  </body>
 </html>
