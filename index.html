@@ -16,42 +16,58 @@
   </header>
 
   <main>
-    <section id="pet-area">
-      <!-- Pet art goes here -->
-      <img id="pet-sprite" src="assets/pets/chicken.png" alt="Chicken">
-      <div id="pet-name">Buddy</div>
-
-      <div id="pet-needs">
-        <div class="need" id="hunger">Hunger: 100%</div>
-        <div class="need" id="thirst">Thirst: 100%</div>
-        <div class="need" id="clean">Cleanliness: 100%</div>
-      </div>
-    </section>
-
-    <section id="flashcard-area">
-      <div id="flashcard-card">
-        <div id="flashcard-question" class="side">Question</div>
-        <div id="flashcard-answer" class="side">Answer</div>
-      </div>
-      <div id="flashcard-counter">1 / 1</div>
-    </section>
-
-    <div id="modal-container" class="hidden"></div>
-    <section id="ui-panels">
-      <section id="inventory-module" class="panel">
-        <h2>Inventory</h2>
-        <section id="inventory-inventory" class="sub-panel">
-          <div id="inventory-items"></div>
+    <div class="game-layout">
+      <div class="left">
+        <section id="inventory-module" class="panel">
+          <h2>Inventory</h2>
+          <section id="inventory-inventory" class="sub-panel">
+            <div id="inventory-items"></div>
+          </section>
         </section>
-      </section>
 
-      <section id="shop-module" class="panel">
-        <h2>Shop</h2>
-        <section id="shop-inventory" class="sub-panel">
-          <div id="shop-items"></div>
+        <section id="shop-module" class="panel">
+          <h2>Shop</h2>
+          <section id="shop-inventory" class="sub-panel">
+            <div id="shop-items" class="shop-grid">
+              <div class="shop-item" data-item="water">
+                <img src="assets/items/water.png" alt="water">
+                <p class="price">10 coins</p>
+              </div>
+              <div class="shop-item" data-item="brush">
+                <img src="assets/items/brush.png" alt="water">
+                <p class="price">10 coins</p>
+              </div>
+            </div>
+          </section>
         </section>
-      </section>
-    </section>
+      </div>
+
+      <div class="center">
+        <img id="pet-sprite" src="assets/pets/chicken.png" alt="Chicken">
+        <div id="pet-name">Buddy</div>
+
+        <div id="pet-hunger" class="stat-bar">
+          <div class="stat-fill" id="hungerFill">Hunger</div>
+        </div>
+        <div id="pet-thirst" class="stat-bar">
+          <div class="stat-fill" id="thirstFill">Thirst</div>
+        </div>
+        <div id="pet-hygiene" class="stat-bar">
+          <div class="stat-fill" id="hygieneFill">Hygiene</div>
+        </div>
+      </div>
+
+        <div class="right">
+          <section id="flashcard-area">
+            <div id="flashcard-card">
+              <div id="flashcard-question" class="side">Question</div>
+              <div id="flashcard-answer" class="side">Answer</div>
+            </div>
+            <div id="flashcard-counter">1 / 1</div>
+          </section>
+        </div>
+
+    </div>
 
   </main>
   <script src="js/storage.js"></script>
