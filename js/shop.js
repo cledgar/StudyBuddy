@@ -1,5 +1,8 @@
 // shop logic
 
+// this is pretty much done in terms of the logic side of things but the shop module is ugly cuz i didnt fix the buttons yet, 
+// so you may need to edit this file when fixing the ugly buttons, idk. coding can be finicky, but this file should be mostly done
+
 class Shop {
   constructor(itemListJSON) {
     this.items = itemListJSON;
