@@ -10,7 +10,7 @@ A game for using your studying as pet care!
     | Summer     | Back-end Developer/UI & Graphic Design |
 
 
-Checklist:  
+# Checklist:  
 - Backend (JS Files)  
       - flashcards.js  
       - inventory.js  
