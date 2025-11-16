@@ -47,6 +47,6 @@ class Flashcards {
   }
 }
 
-module.exports = Flashcards;
+window.exports = Flashcards;
 
 
