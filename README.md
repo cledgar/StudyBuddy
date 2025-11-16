@@ -3,11 +3,9 @@ A game for using your studying as pet care!
 ## Team & Roles
 | Name       | Role                          |
 |------------|-------------------------------|
-| **Caroline** | Project Lead                |
+| **Caroline** | Project Lead & Frontend Development                |
 | **Summer** | Art & Backend Development     |
 | **Yasmin**   | Backend Development |
-| **Pushpa**   | Frontend Development |
-| **Brianna**  | Frontend Development |
 
 ## Checklist:  
 - Backend (JS Files)  
