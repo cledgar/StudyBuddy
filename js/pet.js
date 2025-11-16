@@ -2,6 +2,11 @@
 
 //also feel free to get rid of anything if you dont think we'll need it, or add whatever! + feel free to stub out anything we dont have the resources for yet
 
+// i havent done any pet logic yet. this is where i want things like the need decay of the pet (hunger and thirst and such go down to incentivize players to
+// do flashcards to get money and feed their pet) as well as the ability to provide for the pet please also add some sort of consequence for failing to meet 
+// your pet's needs
+
+
 class Pet {
   constructor() {
     this.name = "Your Pet";
