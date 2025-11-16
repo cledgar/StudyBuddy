@@ -6,6 +6,10 @@
 // ivve been using classes bcuz i like objects :)
 // but once again, as long as it works, follow your own style of coding
 
+window.flashcards = new Flashcards();
+flashcards.loadCards();
+
+
 window.player = {
   coins: 50
 };
@@ -54,11 +58,26 @@ function renderInventoryUI() {
   });
 }
 
+function renderFlashcard() {
+  const card = document.getElementById("flashcard-card");
+  const qEl = document.getElementById("flashcard-question");
+  const aEl = document.getElementById("flashcard-answer");
+
+  const nextQuestion = flashcards.randomCard();
+
+  qEl.textContent = nextQuestion;
+  aEl.textContent = flashcards.revealAnswer();
+
+  // Reset flipped state
+  card.classList.remove("flipped");
+}
+
 
 function onPageLoad() {
   loadGameData();
   renderUI();
   startGameLoop();
+
 }
 
 function startGameLoop() {
@@ -73,4 +92,15 @@ document.addEventListener("DOMContentLoaded", () => {
   updatePetUI?.();
   renderInventoryUI?.();
   shop.renderShopUI();
+  renderFlashcard();
+  const cardElement = document.getElementById("flashcard-card");
+  cardElement.addEventListener("click", () => {
+    cardElement.classList.toggle("flipped");
+  });
+  const nextBtn = document.getElementById("next-card-btn");
+  nextBtn.addEventListener("click", () => {
+    renderFlashcard();
+  });
+
+
 });
