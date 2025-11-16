@@ -14,6 +14,40 @@ window.shop = new Shop({
   water: { price: 8 },
   brush: { price: 12 }
 });
+// Flashcard UI handling
+function startFlashcard() {
+  const q = window.flashcards.randomCard();
+  const box = document.getElementById("flashcard-question");
+  const input = document.getElementById("flashcard-answer");
+  const submit = document.getElementById("flashcard-submit");
+  const correct = document.getElementById("flashcard-correct");
+  const wrong = document.getElementById("flashcard-wrong");
+
+  box.textContent = q;
+  input.value = "";
+
+  submit.onclick = () => {
+    const userAnswer = input.value.trim().toLowerCase();
+    const realAnswer = window.flashcards.currentCard.answer.toLowerCase();
+
+    // show the real answer
+    alert("Correct answer: " + window.flashcards.currentCard.answer);
+
+    // now ask them
+    const userConfirmed = confirm("Did you answer correctly?");
+
+    const result = window.flashcards.selfValidate(userConfirmed);
+
+    if (result) {
+      alert("Correct! +5 coins");
+    } else {
+      alert("No points added");
+    }
+
+    renderCoinDisplay();
+    saveGameData();
+  };
+}
 
 
 window.inventory = {
@@ -74,3 +108,10 @@ document.addEventListener("DOMContentLoaded", () => {
   renderInventoryUI?.();
   shop.renderShopUI();
 });
+
+function onPageLoad() {
+  loadGameData();
+  renderUI();
+  startGameLoop();
+  startFlashcard();   // <-- THIS IS THE CORRECT PLACE
+}
