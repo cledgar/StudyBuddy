@@ -17,71 +17,78 @@ things to do:
 
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-  <meta charset="UTF-8" />
-  <title>StudyBuddy</title>
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>StudyBuddy</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-  <header>
-    <!-- need to make these display actual game info and not the placeholders -->
-    <div id="coin-display">Coins: 0</div>
-    <a id="setting-button" href="settings.html"><img id="settings" src="assets/icons/settings.png" alt="Settings" height="30" width="30"></a>
-  </header>
+  <body>
+    <header>
+      <!-- need to make these display actual game info and not the placeholders -->
+      <div id="coin-display">Coins: 0</div>
+      <a id="setting-button" href="settings.html"
+        ><img
+          id="settings"
+          src="assets/icons/settings.png"
+          alt="Settings"
+          height="30"
+          width="30"
+      /></a>
+    </header>
 
-  <div id="modal-container" class="hidden"></div>
+    <div id="modal-container" class="hidden"></div>
 
-  <main>
-    <div class="game-layout">
-      <div class="left">
-        <section id="inventory-module" class="panel">
-          <h2>Inventory</h2>
-          <section id="inventory-inventory" class="sub-panel">
-            <div id="inventory-items">
-              <div class="inventory-item" data-item="water">
-                <img src="assets/items/water.png" alt="water">
-                <p class="amount">1</p>
+    <main>
+      <div class="game-layout">
+        <div class="left">
+          <section id="inventory-module" class="panel">
+            <h2>Inventory</h2>
+            <section id="inventory-inventory" class="sub-panel">
+              <div id="inventory-items">
+                <div class="inventory-item" data-item="water">
+                  <img src="assets/items/water.png" alt="water" />
+                  <p class="amount">1</p>
+                </div>
+                <div class="inventory-item" data-item="brush">
+                  <img src="assets/items/brush.png" alt="water" />
+                  <p class="price">1</p>
+                </div>
               </div>
-              <div class="inventory-item" data-item="brush">
-                <img src="assets/items/brush.png" alt="water">
-                <p class="price">1</p>
-              </div>
-            </div>
+            </section>
           </section>
-        </section>
 
-        <section id="shop-module" class="panel">
-          <h2>Shop</h2>
-          <section id="shop-inventory" class="sub-panel">
-            <div id="shop-items" class="shop-grid">
-              <div class="shop-item" data-item="water">
-                <img src="assets/items/water.png" alt="water">
-                <p class="price">10 coins</p>
+          <section id="shop-module" class="panel">
+            <h2>Shop</h2>
+            <section id="shop-inventory" class="sub-panel">
+              <div id="shop-items" class="shop-grid">
+                <div class="shop-item" data-item="water">
+                  <img src="assets/items/water.png" alt="water" />
+                  <p class="price">10 coins</p>
+                </div>
+                <div class="shop-item" data-item="brush">
+                  <img src="assets/items/brush.png" alt="water" />
+                  <p class="price">10 coins</p>
+                </div>
               </div>
-              <div class="shop-item" data-item="brush">
-                <img src="assets/items/brush.png" alt="water">
-                <p class="price">10 coins</p>
-              </div>
-            </div>
+            </section>
           </section>
-        </section>
-      </div>
+        </div>
 
-      <div class="center">
-        <img id="pet-sprite" src="assets/pets/chicken.png" alt="Chicken">
-        <div id="pet-name">Buddy</div>
+        <div class="center">
+          <img id="pet-sprite" src="assets/pets/chicken.png" alt="Chicken" />
+          <div id="pet-name">Buddy</div>
 
-        <div class="stat-bar">
-          <div class="stat-fill" id="hunger-bar">Hunger</div>
+          <div class="stat-bar">
+            <div class="stat-fill" id="hunger-bar">Hunger</div>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-fill" id="thirst-bar">Thirst</div>
+          </div>
+          <div class="stat-bar">
+            <div class="stat-fill" id="hygiene-bar">Hygiene</div>
+          </div>
         </div>
-        <div class="stat-bar">
-          <div class="stat-fill" id="thirst-bar">Thirst</div>
-        </div>
-        <div class="stat-bar">
-          <div class="stat-fill" id="hygiene-bar">Hygiene</div>
-        </div>
-      </div>
 
         <div class="right">
           <section id="flashcard-area">
@@ -90,20 +97,21 @@ things to do:
               <div id="flashcard-answer" class="side">Answer</div>
             </div>
             <div id="flashcard-counter">1 / 1</div>
+            <div class="flashcard-controls">
+              <button id="flashcard-correct" class="btn">Correct</button>
+              <button id="flashcard-wrong" class="btn">Wrong</button>
+            </div>
           </section>
         </div>
-
-    </div>
-
-
-
-  </main>
-  <script src="js/storage.js"></script>
-  <script src="js/pet.js"></script>
-  <script src="js/inventory.js"></script>
-  <script src="js/flashcards.js"></script>
-  <script src="js/shop.js"></script>
-  <script src="js/ui.js"></script>
-  <script src="js/main.js"></script>
-</body>
+      </div>
+    </main>
+    <script src="js/storage.js"></script>
+    <script src="js/helpers.js"></script>
+    <script src="js/pet.js"></script>
+    <script src="js/inventory.js"></script>
+    <script src="js/flashcards.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
