@@ -1,5 +1,11 @@
 // main game loop & event listener pseudocode mockup
 
+// currently inventory logic is in here, but this can and should be moved to inventory.js 
+// whenever possible with classes pls (not required i just like it. makes it easier to read)
+// other than that, just use this to put all game features in here to work !
+// ivve been using classes bcuz i like objects :)
+// but once again, as long as it works, follow your own style of coding
+
 window.player = {
   coins: 50
 };
